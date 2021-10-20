@@ -4,4 +4,20 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(49, 49, 49);
+    transition:  .4s;
+}
+body::-webkit-scrollbar-thumb{
+    /* background: linear-gradient( #f4433641, #F44336); */
+    /* background: #F44336; */
+    background: #009688;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    /* background: linear-gradient(#0096872c, #009688); */
+    background: #068073;
 }

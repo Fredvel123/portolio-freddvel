@@ -9,12 +9,12 @@ import { Banner, Buttons, Text, TextHome } from '../../styledComponents/HomeStyl
 function HomePage() {
   return (
     <Fragment>
-      <Banner>
+      <Banner id="home_section">
         <Header />
         <TextHome>
           <Text>
             <h3>I'm a Front-End Developer, I work with ReactJs and the technologies most demanded today! 
-                I have become a junior developer doing projects and solving common problems with code and software.    
+                I've become a junior developer doing projects and solving common problems with code and software.    
             </h3>
           </Text>
           <Buttons>
