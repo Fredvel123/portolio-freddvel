@@ -39,7 +39,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
   width: 100%;
   transition: .3s;
-  background: ${({scrolled})=> scrolled ? "#00000099": "" };
+  background: ${({scrolled})=> scrolled ? "#000000e1": "" };
   height: ${({scrolled}) => scrolled ? "10vh": "20vh"};
   & a {
     color:${color.titles} ;
@@ -133,9 +133,12 @@ export const Text = styled.div`
 export const Buttons = styled.div`
   margin-top: 20px;
   display: flex;
-  & button {
+  & a {
     background: ${color.titles};
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     margin-right: 25px;
     width: 110px;
@@ -145,12 +148,12 @@ export const Buttons = styled.div`
     border-radius: 5px;
     transition: ease-in .2s;
   }
-  button:hover{
+  a:hover{
     background: ${color.sky};
   }
   @media screen and (max-width: 425px){
     flex-direction: column;
-    button {
+    a {
       margin-bottom: 20px;
       margin-right: 0;
     }

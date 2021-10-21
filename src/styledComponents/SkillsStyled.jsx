@@ -36,6 +36,7 @@ export const TextAndImage = styled.div`
   }
   @media screen and (max-width: 960px){
     flex-direction: column;
+
     img {
       width: 90%;
       height: 15vh;

@@ -18,8 +18,8 @@ function HomePage() {
             </h3>
           </Text>
           <Buttons>
-            <button>Contact me</button>
-            <button>Download CV</button>
+            <a href="#about_section" >Let's Start</a>
+            <a>Download CV</a>
            </Buttons>
         </TextHome>
       </Banner>

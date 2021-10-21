@@ -34,6 +34,11 @@ export const PortfolioStyled = styled.div`
   h4 {
     font-size: 25px;
   }
+  @media screen and (max-width: 425px){
+    h2 {
+      font-size: 30px;
+    }
+  }
 `
 export const Backgroud = styled.div`
   columns: 5 320px ;
@@ -57,6 +62,13 @@ export const Cards = styled.div`
   }
   p {
     margin: 5px 7px;
+  }
+  transition: ease-in .2s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 2px 4px 23px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 4px 23px -1px rgba(0,0,0,0.75); 
+    -moz-box-shadow: 2px 4px 23px -1px rgba(0,0,0,0.75);
   }
 `
 export const IconsStyled  = styled.div`
