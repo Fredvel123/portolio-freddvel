@@ -44,10 +44,10 @@ export const Icons = styled.div`
     margin: 15px 10px;
     width: 70px;
     height: 70px;
-    transition: ease-in .3s;
+    transition: ease-in .2s;
   }
   img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   @media screen and (max-width: 540px){
     img {

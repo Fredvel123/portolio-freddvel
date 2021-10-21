@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const image = "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80";
-
 const color = {
     darkBlue: "#000C24",
     sky: "#009688",
@@ -20,9 +18,10 @@ const fonts = {
 
 
 export const SkillsStyled = styled.div`
-  background: #373c49;
-  
+  background: ${color.white};
+  color: ${color.gray};
   display: flex;
+  padding-top: 4vh;
   flex-direction: column;
 `
 export const TextAndImage = styled.div`
@@ -38,7 +37,9 @@ export const TextAndImage = styled.div`
   @media screen and (max-width: 960px){
     flex-direction: column;
     img {
-      display: none;
+      width: 90%;
+      height: 15vh;
+      margin: 20px 5%;
     }
   }
   @media screen and (max-width: 580px){
@@ -49,7 +50,7 @@ export const TextAndImage = styled.div`
 export const TextSection = styled.div`
   width: 70%;
   & span {
-    color: #37d6eb;
+    color: ${color.tomato};
   }
   h2 {
     color: ${color.tomato};
@@ -59,15 +60,9 @@ export const TextSection = styled.div`
   h3 {
     margin-top: 15px;
     font-family: ${fonts.text};
+    color: #000;
     font-size: 17px;
   }
-  /* height: 100vh; */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.836), #00968771), url(${image});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
-  color: ${color.white};
   padding: 20px 35px;
   display: flex;
   flex-wrap: wrap;
@@ -108,18 +103,18 @@ export const  ImagesSection = styled.div`
   width: 100%;
   justify-content: center;
   & img {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     transition: ease-in .1s;
   }
   img:hover {
-    transform: scale(1.2);
+    transform: translateY(-15px);
   }
   @media screen and (max-width: 960px){
     flex-wrap: wrap;
     img {
-      width: 90px;
-      height: 90px;
+      width: 70px;
+      height: 70px;
     }
   }
 `
