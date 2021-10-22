@@ -15,7 +15,7 @@ const proyects = [
   {
     title: "Notes App ",
     img: notesApp,
-    text: "I made this little aplication to add new tasks and you also can get a Random Quote from Quotes APi ",
+    text: "I made this little app to add new tasks and you also can get a Random Quote from Quotes APi ",
     github: "https://github.com/Fredvel123/notes-app",
     url: "https://notes-app-freddvel.netlify.app"
   },
@@ -29,7 +29,7 @@ const proyects = [
   {
     title: "Unsplusssh ",
     img: photosApp,
-    text: "This is an aplications SPA (Single Page APlication to search photograph from the Unsplash API.",
+    text: "This is an app SPA (Single Page Aplication to search photograph from the Unsplash API.",
     github: "https://github.com/Fredvel123/unsplush-app",
     url: "https://unsplusssh-app.netlify.app"
   },
@@ -43,7 +43,7 @@ const proyects = [
   {
     title: "Search Dog App",
     img: dogApp,
-    text: "This is a very simple aplication, but this is consume another Api, and I love to consume APis",
+    text: "This is a very simple app, but this is consuming another Api, and I love to consume APis",
     github: "https://github.com/Fredvel123/FredVel123.github.io",
     url: "https://dogapi-freddyvelarde.netlify.app/"
   }
