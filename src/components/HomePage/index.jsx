@@ -19,7 +19,7 @@ function HomePage() {
           </Text>
           <Buttons>
             <a href="#about_section" >Let's Start</a>
-            <a>Download CV</a>
+            <a href="#portfolio_section" >Portfolio</a>
            </Buttons>
         </TextHome>
       </Banner>

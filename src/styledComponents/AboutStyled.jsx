@@ -56,7 +56,8 @@ export const TextAbout = styled.div`
   & a {
     color: ${color.white};
     background: ${color.tomato};
-    padding: 15px 45px;
+    padding: 15px 10px;
+    margin-right: 20px;
     transition: .5s;
   }
   a:hover {
@@ -70,6 +71,13 @@ export const TextAbout = styled.div`
     }
     h3 {
       font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 585px){
+    a {
+      margin-bottom: 15px;
+      margin-right: 0;
+      padding: 15px 30px;
     }
   }
   @media screen and (max-width: 585px ){

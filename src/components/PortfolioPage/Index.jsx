@@ -29,7 +29,7 @@ const proyects = [
   {
     title: "Unsplusssh ",
     img: photosApp,
-    text: "This is an app SPA (Single Page Aplication to search photograph from the Unsplash API.",
+    text: "This is an app SPA (Single Page Aplication) to search photograph from the Unsplash API.",
     github: "https://github.com/Fredvel123/unsplush-app",
     url: "https://unsplusssh-app.netlify.app"
   },
