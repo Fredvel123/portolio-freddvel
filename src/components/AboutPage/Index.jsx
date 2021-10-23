@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 // styled Components
 import { About, TextAbout } from '../../styledComponents/AboutStyled';
-import wallpaper from '../../images/wallpaper5.jpg'
+import wallpaper from '../../images/wallpaper6.jpg'
 
 function AboutPage() {
   return (
