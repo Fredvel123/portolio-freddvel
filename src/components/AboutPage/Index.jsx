@@ -16,8 +16,8 @@ function AboutPage() {
             , everything that I learned I did as self-taught, reading blogs, documentation oficial, and practicing everyday. <br />
             Hope I can to work with you and your Team and build the future.      
            </h3>
-          <a href="https://drive.google.com/file/d/11lI7JhkOZ6QBkkcuXg6M3tuzwgtgfoqs/view?usp=sharing" target="_b">CV English</a>
-          <a href="https://drive.google.com/file/d/1CG5xsw6JDhykZr67aoGMkHicD0yhs_s2/view?usp=sharing" target="_b">CV Spanish</a>
+          <a href="https://drive.google.com/file/d/1t4Jlp0y-J59O1sXCBeEOsBhSYIIQwZ9h/view?usp=sharing" target="_b">CV English</a>
+          <a href="https://drive.google.com/file/d/1CIkIWF24g5Q5fLiTtA0j0ef_zv40rKvL/view?usp=sharing" target="_b">CV Spanish</a>
         </TextAbout>
       </About>
     </Fragment>

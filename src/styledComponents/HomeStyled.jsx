@@ -113,7 +113,7 @@ export const Text = styled.div`
   & h3{
     text-align: center;
     color: ${color.letter} ;
-    font-family: ${fonts.text2};
+    font-family: ${fonts.text};
     font-size: 30px;
   }
   @media screen and (max-width: 675px){

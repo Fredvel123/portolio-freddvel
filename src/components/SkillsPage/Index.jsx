@@ -15,18 +15,9 @@ function Skills() {
       <SkillsStyled id="skills_section">
         <TextAndImage>
           <TextSection>
-            {/* <Title>
-          <h2>Skills</h2>
-          <img src={reactIcon} alt="" />
-          <h3>
-            I enjoy creating things that live on the internet, whether that be websites, 
-            applications, or anything in between.
-          </h3>
-        </Title> */}
-
             <WebDevelopment>
               <h2>Web Developement knowledge</h2>
-              <h3>Html, Css(flex-box, grid, masonry)</h3>
+              <h3>Html, Css(flex-box, grid, masonry) Responsive Design, <span>Movile first</span> </h3>
               <h3>Git and GitHub</h3>
               <h3>Javascript: Variables, functions, loops, conditionals, <span>Async</span>, methods array, and <span>oop</span> </h3>
             </WebDevelopment>
@@ -34,8 +25,7 @@ function Skills() {
             <ReactSection>
               <h2>React Js knowledge</h2>
               <h3>
-                I work with the basic React tools: Hooks, funcional components, props, and JSX. Obviosly I know
-                Javascrip (EM6).
+                I work with the React tools: Hooks, funcional components, props, and JSX.
               </h3>
               <h3>
                 I also work with <span>styled components</span> , and useContext.
