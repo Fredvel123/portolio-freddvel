@@ -79,8 +79,8 @@ function PortfolioPage() {
               <p> <span>Short description:</span> {item.text}</p>
               <p> <span>Technogies used:</span> {item.tech}</p>
               <IconsStyled>
-                <a href={item.github} target="_blank"  ><img src={github} alt="" /></a>
-                <a href={item.url} target="_blank"  ><img src={linkExternal} alt="" /></a>
+                <a href={item.github} target="_blank" rel="noreferrer"  ><img src={github} alt="" /></a>
+                <a href={item.url} target="_blank" rel="noreferrer"   ><img src={linkExternal} alt="" /></a>
               </IconsStyled>
             </Cards>
           ))}
