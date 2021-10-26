@@ -1,28 +1,14 @@
 import styled from 'styled-components';
-
-const color = {
-    darkBlue: "#000C24",
-    sky: "#009688",
-    white: "#fbfbfb",
-    grayLight: "#cfcfcf ",
-    tomato: "#F44336",
-    gray: "#928A97"
-  }
-const fonts = {
-  title: "'Source Sans Pro', sans-serif",
-  text: "'Barlow', sans-serif",
-  text2: " 'Karma', serif",
-  subtitle: "'Source Sans Pro', sans-serif",
-  informal: " 'Patrick Hand', cursive"
-}
-
+// tools
+import color from './tools/color.json'
+import fonts from './tools/fonts.json'
 
 export const SkillsStyled = styled.div`
   background: ${color.white};
   color: ${color.gray};
   display: flex;
-  padding-top: 4vh;
   flex-direction: column;
+  padding: 7vh 5%;
 `
 export const TextAndImage = styled.div`
   display: flex;
@@ -44,7 +30,7 @@ export const TextAndImage = styled.div`
     }
   }
   @media screen and (max-width: 580px){
-    text-align: center;
+    /* text-align: center; */
   }
 `
 
@@ -64,7 +50,11 @@ export const TextSection = styled.div`
     color: #000;
     font-size: 17px;
   }
-  padding: 20px 35px;
+  h3 img {
+    width: 15px;
+    height: 15px;
+  }
+  /* padding: 20px 35px; */
   display: flex;
   flex-wrap: wrap;
   @media screen and (max-width: 960px){
@@ -109,7 +99,7 @@ export const  ImagesSection = styled.div`
     transition: ease-in .1s;
   }
   img:hover {
-    transform: translateY(-15px);
+    transform: scale(1.1);
   }
   @media screen and (max-width: 960px){
     flex-wrap: wrap;

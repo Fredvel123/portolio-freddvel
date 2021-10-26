@@ -1,20 +1,22 @@
 import styled from 'styled-components';
+import color from './tools/color.json'
+import fonts from './tools/fonts.json'
 
-const color = {
-    darkBlue: "#000C24",
-    sky: "#009688",
-    white: "#fbfbfb",
-    grayLight: "#cfcfcf ",
-    tomato: "#F44336",
-    gray: "#928A97"
-  }
-const fonts = {
-  title: "'Source Sans Pro', sans-serif",
-  text: "'Barlow', sans-serif",
-  text2: " 'Karma', serif",
-  subtitle: "'Source Sans Pro', sans-serif",
-  informal: " 'Patrick Hand', cursive"
-}
+// const color = {
+//     darkBlue: "#000C24",
+//     sky: "#009688",
+//     white: "#fbfbfb",
+//     grayLight: "#cfcfcf ",
+//     tomato: "#F44336",
+//     gray: "#928A97"
+//   }
+// const fonts = {
+//   title: "'Source Sans Pro', sans-serif",
+//   text: "'Barlow', sans-serif",
+//   text2: " 'Karma', serif",
+//   subtitle: "'Source Sans Pro', sans-serif",
+//   informal: " 'Patrick Hand', cursive"
+// }
 
 export const About = styled.div`
   background: ${color.grayLight};
@@ -29,12 +31,16 @@ export const About = styled.div`
   @media screen and (max-width: 750px){
     height: auto;
     /* flex-direction: column; */
+    img {
+      margin: 20px 0;
+    }
   }
   @media screen and (max-width: 585px){
     flex-direction: column;
     img {
-      width: 80%;
+      width: 50%;
       margin-top: 20px;
+      margin-bottom: 0px;
     }
   }
 `
@@ -78,17 +84,19 @@ export const TextAbout = styled.div`
       margin-bottom: 15px;
       margin-right: 0;
       padding: 15px 30px;
+      width: 100%;
+      text-align: center;
     }
   }
   @media screen and (max-width: 585px ){
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 80%;
     margin: 15px 0;
     h3{
-      text-align: center;
+      /* text-align: center; */
       margin-bottom: 25px;
     }
     a {

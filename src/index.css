@@ -14,10 +14,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb{
     /* background: linear-gradient( #f4433641, #F44336); */
     /* background: #F44336; */
-    background: #009688;
     border-radius: 10px;
+    background: #009688;
 }
 body::-webkit-scrollbar-thumb:hover {
     /* background: linear-gradient(#0096872c, #009688); */
-    background: #056e64;
+    background: #F44336;
 }

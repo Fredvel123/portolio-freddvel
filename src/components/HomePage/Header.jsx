@@ -31,6 +31,7 @@ function Header() {
       <HeaderStyled menu={openCLoseMenu} scrolled={headerScrolled}>
         <a href="#home_section" >Freddy Velarde</a>
         <ul>
+          <a href="#home_section">Home</a>
           <a href="#about_section">About me</a>
           <a href="#skills_section" >Skills</a>
           <a href="#portfolio_section" >Portfolio</a>

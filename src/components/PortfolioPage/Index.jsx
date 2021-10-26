@@ -58,7 +58,7 @@ const proyects = [
   {
     title: "Search Dog App",
     img: dogApp,
-    text: "This is a very simple app, but this is consuming another Api, and I love to consume APis",
+    text: "This is a very simple app, but this is consuming another Api, and I love to consume APIs",
     github: "https://github.com/Fredvel123/FredVel123.github.io",
     url: "https://dogapi-freddyvelarde.netlify.app/",
     tech: " hooks, functional components, Api Call"
@@ -79,8 +79,8 @@ function PortfolioPage() {
               <p> <span>Short description:</span> {item.text}</p>
               <p> <span>Technogies used:</span> {item.tech}</p>
               <IconsStyled>
-                <a href={item.github} target="_blank" ><img src={github} alt="" /></a>
-                <a href={item.url} target="_blank" ><img src={linkExternal} alt="" /></a>
+                <a href={item.github} target="_blank"  ><img src={github} alt="" /></a>
+                <a href={item.url} target="_blank"  ><img src={linkExternal} alt="" /></a>
               </IconsStyled>
             </Cards>
           ))}

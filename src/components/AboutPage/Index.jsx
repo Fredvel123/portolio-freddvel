@@ -11,10 +11,9 @@ function AboutPage() {
         <TextAbout> 
           <h2>About me</h2>
           <h3>
-            Hi, my name is Freddy Velarde, I am a front-End Web developer and I'm specialized in ReactJs. <br />
-            i have been study and learning Web Development through one year, where I built multiple proyects and code challenges 
-            , everything that I learned I did as self-taught, reading blogs, documentation oficial, and practicing everyday. <br />
-            Hope I can to work with you and your Team and build the future.      
+            Hi, my name is Freddy Erick Velarde Silva, I am a front-End Web developer and I'm specialized in ReactJs. <br />
+            I have been study and learning Web Development throughout one year, where I built multiple proyects and code challenges 
+            , everything that I learned I did as self-taught, reading blogs, documentation oficial, and practicing everyday <br />      
            </h3>
           <a href="https://drive.google.com/file/d/1t4Jlp0y-J59O1sXCBeEOsBhSYIIQwZ9h/view?usp=sharing" target="_b">CV English</a>
           <a href="https://drive.google.com/file/d/1CIkIWF24g5Q5fLiTtA0j0ef_zv40rKvL/view?usp=sharing" target="_b">CV Spanish</a>

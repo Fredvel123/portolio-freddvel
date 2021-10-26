@@ -1,24 +1,12 @@
 import styled from 'styled-components';
-
-const color = {
-    darkBlue: "#000C24",
-    sky: "#1a7e74",
-    white: "#fbfbfb",
-    grayLight: "#cfcfcf ",
-    tomato: "#F44336",
-    gray: "#928A97"
-  }
-const fonts = {
-  title: "'Source Sans Pro', sans-serif",
-  text: "'Barlow', sans-serif",
-  text2: " 'Karma', serif",
-  subtitle: "'Source Sans Pro', sans-serif",
-  informal: " 'Patrick Hand', cursive"
-}
+// tools
+import color from './tools/color.json'
+import fonts from './tools/fonts.json'
 
 export const PortfolioStyled = styled.div`
   background: ${color.grayLight};
   padding: 10vh 5%;
+  padding-bottom: 0px;
   span {
     color: ${color.tomato};
   }
@@ -26,6 +14,7 @@ export const PortfolioStyled = styled.div`
     color: ${color.tomato};
     font-size: 45px;
     font-family: ${fonts.title};
+    margin-bottom: 15px;
   }
   h3 {
     color: ${color.sky};
@@ -41,13 +30,16 @@ export const PortfolioStyled = styled.div`
   }
 `
 export const Backgroud = styled.div`
-  columns: 5 320px ;
+  columns: 5 250px ;
+@media screen and (min-width: 850px){
+  columns: 3 320px;
+}
 `
 export const Cards = styled.div`
   border-radius: 15px;
   width: auto;
   break-inside: avoid;
-  margin: 0 15px;
+  /* margin: 0 15px; */
   margin-bottom: 15px;
   background: #fff;
   display: flex;

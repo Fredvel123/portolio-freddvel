@@ -1,22 +1,11 @@
 import styled from "styled-components";
-import imgBackground from '../images/background.png'
+import imgBackground from '../images/background.png';
+// tools
+import color from './tools/color.json'
+import fonts from './tools/fonts.json'
 
-const color = {
-      background: "#000C24",
-      sky: "#009688",
-      letter: "#fbfbfb",
-      titles: "#F44336",
-      subtitles: "#928A97"
-    }
-const fonts = {
-    title: "'Source Sans Pro', sans-serif",
-    text: "'Barlow', sans-serif",
-    text2: " 'Karma', serif",
-    subtitle: "'Source Sans Pro', sans-serif",
-    informal: " 'Patrick Hand', cursive"
-}
-
-const image = "https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80";
+// const image = "https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80";
+const image = "https://images.unsplash.com/photo-1546900703-cf06143d1239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1450&q=80";
 
 export const Banner = styled.div`
   width: 100%;
@@ -42,7 +31,7 @@ export const HeaderStyled = styled.header`
   background: ${({scrolled})=> scrolled ? "#000000e1": "" };
   height: ${({scrolled}) => scrolled ? "10vh": "20vh"};
   & a {
-    color:${color.titles} ;
+    color:${color.tomato} ;
     font-size: 25px;
     font-family: ${fonts.title};
     text-transform: uppercase;
@@ -52,7 +41,7 @@ export const HeaderStyled = styled.header`
     margin-right: 5%;
   }
   & ul a {
-    color: ${ color.letter };
+    color: ${ color.white };
     font-size: 18px;
     margin: 0 15px;
     font-family: ${fonts.subtitle};
@@ -60,11 +49,17 @@ export const HeaderStyled = styled.header`
     
   }
   ul a:hover{
-    color: ${color.subtitles};
+    color: ${color.gray};
   }
   & img{
     display: none;
   }
+  @media screen and (max-width: 800px) {
+    ul a {
+      font-size: 14px;
+    }
+  }
+
   @media screen and (max-width: 675px){
     img{
       display: block;
@@ -80,14 +75,13 @@ export const HeaderStyled = styled.header`
       flex-direction: ${({menu}) =>menu ? "column": "column" };
       position: ${({menu}) => menu ? "absolute": "absolute"};
       top: 0;
-      
       width: ${({menu}) => menu ? "60%" : "60%"};
       height: ${({menu}) => menu ? "100vh" : "100vh"};
       justify-content: center;
       align-items: center;
     }
     ul a {
-      font-size: ${({menu}) => menu ? "27px" : "18px"} ;
+      font-size: ${({menu}) => menu ? "20px" : "18px"} ;
       margin: ${({menu}) => menu ? "25px 0" : "0 15px"};
       color: ${color.letter};
     }
@@ -112,7 +106,7 @@ export const Text = styled.div`
   width: 70% ;
   & h3{
     text-align: center;
-    color: ${color.letter} ;
+    color: ${color.white} ;
     font-family: ${fonts.text};
     font-size: 30px;
   }
@@ -134,7 +128,7 @@ export const Buttons = styled.div`
   margin-top: 20px;
   display: flex;
   & a {
-    background: ${color.titles};
+    background: ${color.tomato};
     border: none;
     display: flex;
     justify-content: center;
@@ -142,7 +136,8 @@ export const Buttons = styled.div`
     color: #fff;
     margin-right: 25px;
     width: 110px;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: ${fonts.title};
     height: 50px;
     cursor: pointer;
     border-radius: 5px;
