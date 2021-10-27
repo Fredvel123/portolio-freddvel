@@ -7,7 +7,7 @@ import fonts from './tools/fonts.json';
 
 export const ContactSection = styled.div`
   width: 100%;
-  background: #000;
+  background: ${color.dark};
   color: ${color.white};
   display: flex;
   justify-content: center;

@@ -2,7 +2,7 @@ import React, {Fragment, useState} from 'react';
 // styled componets.
 import {HeaderStyled} from '../../styledComponents/HomeStyled'
 // icons
-import menuOpen from '../../icons/menu-open.png';
+import menuPink from '../../icons/menuPink.png'
 import close from '../../icons/out.png';
 
 function Header() {
@@ -37,7 +37,7 @@ function Header() {
           <a href="#portfolio_section" >Portfolio</a>
           <a href="#contact_section" >Contact</a>
         </ul>
-        <img src={ !openCLoseMenu ? menuOpen : close} onClick={menuFunction} alt="" />
+        <img src={menuPink} onClick={menuFunction} alt="" />
       </HeaderStyled> 
     </Fragment>
   )

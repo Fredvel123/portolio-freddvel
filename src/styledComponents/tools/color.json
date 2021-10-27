@@ -1,8 +1,10 @@
 {
-    "darkBlue": "#000C24",
-    "sky": "#009688",
-    "white": "#fbfbfb",
-    "grayLight": "#cfcfcf ",
-    "tomato": "#F44336",
-    "gray": "#928A97"
+  "dark": "#10151a",
+  "dark2": "#242f39",
+  "blueDark": "#1fabc8",
+  "blue": "#3ac4e0",
+  "light": "#B4B9BC",
+  "pink": "#F652A0",
+  "sky" : "#36EEE0",
+  "white": "rgb(241, 241, 241)"
 }

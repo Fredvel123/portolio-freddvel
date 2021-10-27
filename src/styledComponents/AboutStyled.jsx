@@ -2,24 +2,9 @@ import styled from 'styled-components';
 import color from './tools/color.json'
 import fonts from './tools/fonts.json'
 
-// const color = {
-//     darkBlue: "#000C24",
-//     sky: "#009688",
-//     white: "#fbfbfb",
-//     grayLight: "#cfcfcf ",
-//     tomato: "#F44336",
-//     gray: "#928A97"
-//   }
-// const fonts = {
-//   title: "'Source Sans Pro', sans-serif",
-//   text: "'Barlow', sans-serif",
-//   text2: " 'Karma', serif",
-//   subtitle: "'Source Sans Pro', sans-serif",
-//   informal: " 'Patrick Hand', cursive"
-// }
 
 export const About = styled.div`
-  background: ${color.grayLight};
+  background: ${color.dark2};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +34,7 @@ export const TextAbout = styled.div`
   width: 50%;
   margin-left: 45px;
   & h2 {
-    color: ${color.tomato};
+    color: ${color.pink};
     margin-bottom: 20px;
     font-family: ${fonts.title};
     font-size: 30px;
@@ -57,16 +42,18 @@ export const TextAbout = styled.div`
   & h3 {
     font-family: ${fonts.text};
     font-size: 18px;
+    color: ${color.white};
     margin-bottom: 45px;
   }
   & a {
     color: ${color.white};
-    background: ${color.tomato};
+    background: ${color.pink};
     padding: 15px 10px;
     margin-right: 20px;
     transition: .5s;
   }
   a:hover {
+    color: ${color.dark};
     background: ${color.sky};
   }
   @media screen and (max-width: 750px){

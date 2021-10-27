@@ -4,24 +4,27 @@ import color from './tools/color.json'
 import fonts from './tools/fonts.json'
 
 export const PortfolioStyled = styled.div`
-  background: ${color.grayLight};
+  background: ${color.dark2};
   padding: 10vh 5%;
   padding-bottom: 0px;
   span {
-    color: ${color.tomato};
+    color: ${color.sky};
+    font-family: ${fonts.title};
   }
   h2 {
-    color: ${color.tomato};
+    color: ${color.pink} ;
     font-size: 45px;
     font-family: ${fonts.title};
     margin-bottom: 15px;
   }
   h3 {
-    color: ${color.sky};
+    color: ${color.pink};
     font-size: 30px;
+    font-family: ${fonts.title};
   }
   h4 {
     font-size: 25px;
+    color: ${color.white};
   }
   @media screen and (max-width: 425px){
     h2 {
@@ -37,11 +40,12 @@ export const Backgroud = styled.div`
 `
 export const Cards = styled.div`
   border-radius: 15px;
+  overflow: hidden;
   width: auto;
   break-inside: avoid;
   /* margin: 0 15px; */
   margin-bottom: 15px;
-  background: #fff;
+  background: ${color.dark};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,6 +58,8 @@ export const Cards = styled.div`
   }
   p {
     margin: 5px 7px;
+    color: ${color.white};
+    font-family: ${fonts.text};
   }
   transition: ease-in .2s;
   cursor: pointer;

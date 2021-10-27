@@ -28,28 +28,31 @@ export const HeaderStyled = styled.header`
   align-items: center;
   width: 100%;
   transition: .3s;
-  background: ${({scrolled})=> scrolled ? "#000000e1": "" };
+  background: ${({scrolled})=> scrolled ? "#202020" : "" };
   height: ${({scrolled}) => scrolled ? "10vh": "20vh"};
   & a {
-    color:${color.tomato} ;
+    color:${color.pink} ;
     font-size: 25px;
     font-family: ${fonts.title};
     text-transform: uppercase;
     margin-left: 5%;
+    padding: 1vh 10px;
+    border: 2px ${color.pink} solid;
   }
   & ul{
     margin-right: 5%;
   }
   & ul a {
-    color: ${ color.white };
+    border: none;
+    color: ${ color.light };
     font-size: 18px;
-    margin: 0 15px;
+    margin: 0 7px;
     font-family: ${fonts.subtitle};
     transition: ease-in-out .3s;
     
   }
   ul a:hover{
-    color: ${color.gray};
+    color: ${color.blue};
   }
   & img{
     display: none;
@@ -60,17 +63,20 @@ export const HeaderStyled = styled.header`
     }
   }
 
-  @media screen and (max-width: 675px){
+  @media screen and (max-width: 710px){
     img{
       display: block;
       margin-right: 5%;
       width: 50px;
     }
+    a {
+      padding: .5vh 6px;
+    }
     ul {
 
       transition: ease-in-out .5s;
       transform: ${({menu}) => menu ? "translateX(0)" : "translateX(-100%)" };
-      background: #009687dc;
+      background: linear-gradient(#009687dc, #ca14c1dc);
       display: ${({menu})=> menu? "flex" : "flex"};
       flex-direction: ${({menu}) =>menu ? "column": "column" };
       position: ${({menu}) => menu ? "absolute": "absolute"};
@@ -83,7 +89,7 @@ export const HeaderStyled = styled.header`
     ul a {
       font-size: ${({menu}) => menu ? "20px" : "18px"} ;
       margin: ${({menu}) => menu ? "25px 0" : "0 15px"};
-      color: ${color.letter};
+      color: ${color.white};
     }
     @media screen and (max-width: 425px ){
       img {
@@ -128,7 +134,6 @@ export const Buttons = styled.div`
   margin-top: 20px;
   display: flex;
   & a {
-    background: ${color.tomato};
     border: none;
     display: flex;
     justify-content: center;
@@ -142,9 +147,12 @@ export const Buttons = styled.div`
     cursor: pointer;
     border-radius: 5px;
     transition: ease-in .2s;
+    border: 3px ${color.pink} solid;
+    background: #0000001f;
   }
   a:hover{
-    background: ${color.sky};
+    background: ${color.pink};
+    color: ${color.white};
   }
   @media screen and (max-width: 425px){
     flex-direction: column;

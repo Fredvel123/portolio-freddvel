@@ -15,9 +15,9 @@ body::-webkit-scrollbar-thumb{
     /* background: linear-gradient( #f4433641, #F44336); */
     /* background: #F44336; */
     border-radius: 10px;
-    background: #009688;
+    background: #F652A0;
 }
 body::-webkit-scrollbar-thumb:hover {
     /* background: linear-gradient(#0096872c, #009688); */
-    background: #F44336;
+    background: #36EEE0;
 }
