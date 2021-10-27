@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 // tools
-import color from './tools/color.json'
+// import color from './tools/color.json'
 import fonts from './tools/fonts.json'
+const color = {
+  dark: "#0C2D48",
+  blue: "#2E8BC0",
+  light: "#B1D4E0",
+  pink: "#F652A0",
+  sky : "#36EEE0"
+}
 
 export const SkillsStyled = styled.div`
-  background: ${color.white};
+  background: ${color.dark};
   color: ${color.gray};
   display: flex;
   flex-direction: column;
@@ -37,17 +44,17 @@ export const TextAndImage = styled.div`
 export const TextSection = styled.div`
   width: 70%;
   & span {
-    color: ${color.tomato};
+    color: ${color.sky};
   }
   h2 {
-    color: ${color.tomato};
+    color: ${color.blue};
     font-family: ${fonts.title};
     font-size: 45px;
   }
   h3 {
     margin-top: 15px;
     font-family: ${fonts.text};
-    color: #000;
+    color: ${color.light};
     font-size: 17px;
   }
   h3 img {
