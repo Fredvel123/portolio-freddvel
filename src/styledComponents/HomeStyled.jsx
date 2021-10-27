@@ -147,12 +147,11 @@ export const Buttons = styled.div`
     cursor: pointer;
     border-radius: 5px;
     transition: ease-in .2s;
-    border: 3px ${color.pink} solid;
-    background: #0000001f;
+    background: ${color.pink};
   }
   a:hover{
-    background: ${color.pink};
-    color: ${color.white};
+    background: ${color.sky};
+    color: ${color.dark};
   }
   @media screen and (max-width: 425px){
     flex-direction: column;

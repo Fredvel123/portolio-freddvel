@@ -58,7 +58,7 @@ export const Cards = styled.div`
   }
   p {
     margin: 5px 7px;
-    color: ${color.white};
+    color: #fff;
     font-family: ${fonts.text};
   }
   transition: ease-in .2s;

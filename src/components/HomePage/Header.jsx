@@ -3,7 +3,6 @@ import React, {Fragment, useState} from 'react';
 import {HeaderStyled} from '../../styledComponents/HomeStyled'
 // icons
 import menuPink from '../../icons/menuPink.png'
-import close from '../../icons/out.png';
 
 function Header() {
   const [openCLoseMenu, setopenCLoseMenu] = useState(false);

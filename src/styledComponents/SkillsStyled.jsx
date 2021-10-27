@@ -50,6 +50,7 @@ export const TextSection = styled.div`
     color: ${color.sky};
   }
   h2 {
+    text-transform: uppercase;
     color: ${color.pink};
     font-family: ${fonts.title};
     font-size: 45px;

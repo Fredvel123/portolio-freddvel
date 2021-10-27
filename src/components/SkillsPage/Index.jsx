@@ -17,14 +17,14 @@ function Skills() {
         <TextAndImage>
           <TextSection>
             <WebDevelopment>
-              <h2> Web Developement knowledge</h2>
-              <h3> &#10004; Html, Css(flex-box, grid) Responsive Design, <span>Movile first</span> </h3>
+              <h2> Web developement skills</h2>
+              <h3> &#10004; Html, css(flex-box, grid) responsive design, <span>Mobile first</span> </h3>
               <h3> &#10004;  Git and GitHub</h3>
               <h3> &#10004;  Javascript: Variables, functions, loops, conditionals, <span>Async</span>, methods array, and <span>oop</span> </h3>
             </WebDevelopment>
 
             <ReactSection>
-              <h2>React Js knowledge</h2>
+              <h2>React Js skills</h2>
               <h3>
               &#10004; I work with the React tools: Hooks, funcional components, props, and JSX.
               </h3>
@@ -32,7 +32,7 @@ function Skills() {
               &#10004;  I also work with <span>styled components</span> , and useContext.
               </h3>
               <h3>
-                I can to call Rest APIs, (async - await) with json objets.
+                I can call Rest APIs, (async - await) with json objets.
               </h3>
               <h3>
               &#10004;  I've been working on <span>React Redux</span> (React-Toolkit) and <span>React Router</span>.

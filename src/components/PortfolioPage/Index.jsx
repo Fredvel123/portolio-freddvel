@@ -8,8 +8,8 @@ import movieApp from '../../images/movie-app.jpg'
 import eCommApp from '../../images/eCommerce-app.jpg'
 
 // icons
-import github from '../../icons/githubBlack.png'
-import linkExternal from '../../icons/link.png'
+import github from '../../icons/githubSky.png'
+import linkExternal from '../../icons/link-Pink.png'
 // styled components
 import { Backgroud, Cards, IconsStyled, PortfolioStyled } from '../../styledComponents/PortfolioPage';
 
@@ -70,7 +70,7 @@ function PortfolioPage() {
   return(
     <Fragment>
       <PortfolioStyled id="portfolio_section">
-        <h2>Proyects</h2>
+        <h2>PROJECTS</h2>
         <Backgroud>
           {proyects.map((item, index) => (
             <Cards key={index}>

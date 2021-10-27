@@ -13,7 +13,7 @@ function HomePage() {
         <Header />
         <TextHome>
           <Text>
-            <h3>I'm a Front-End Developer, I work with ReactJs and the technologies most demanded today! 
+            <h3>I'm a Front-end developer, I work with ReactJs and the technologies most demanded today! 
                 I've become a junior developer doing projects and solving common problems with code and software.    
             </h3>
           </Text>

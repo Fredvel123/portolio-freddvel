@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 // styled components.
 import { ContactSection, Icons } from '../../styledComponents/ContactStylerd';
 // icons
-import facebookIcon from '../../icons/facebook.png'
-import gitHubIcon from '../../icons/github.png'
-import linkdinIcon from '../../icons/linkedin.png'
+import facebookIcon from '../../icons/facePink.png'
+import gitHubIcon from '../../icons/githubPink.png'
+import linkdinIcon from '../../icons/linkPink.png'
 
 
 function ContactPage() {
