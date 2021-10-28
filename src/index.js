@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import Home from './Home';
 // styles Global
 import './index.css'
+// reducx
+import { Provider } from 'react-redux';
+import { store } from './redux-toolkit/store';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <Home />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
