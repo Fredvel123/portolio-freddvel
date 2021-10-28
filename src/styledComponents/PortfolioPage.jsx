@@ -5,8 +5,9 @@ import fonts from './tools/fonts.json'
 
 export const PortfolioStyled = styled.div`
   background: ${color.dark2};
-  padding: 10vh 5%;
-  padding-bottom: 0px;
+  padding: 0 5%;
+  padding-top: 10vh;
+  padding-bottom: 0;
   span {
     color: ${color.sky};
     font-family: ${fonts.title};

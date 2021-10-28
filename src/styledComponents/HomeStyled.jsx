@@ -4,12 +4,13 @@ import imgBackground from '../images/background.png';
 import color from './tools/color.json'
 import fonts from './tools/fonts.json'
 
-// const image = "https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80";
 const image = "https://images.unsplash.com/photo-1546900703-cf06143d1239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1450&q=80";
+// const image2 = "https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80";
 
 export const Banner = styled.div`
   width: 100%;
   height: 100vh;
+  transition: ease-in .5s;
   background-image: linear-gradient(rgba(0, 0, 0, 0.836), #00968771), url(${image});
   /* background-image: url(${imgBackground}); */
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@ export const Banner = styled.div`
 // header menu
 export const HeaderStyled = styled.header`
   display: flex;
+  z-index: 10;
   position: ${({scrolled}) => scrolled ? "fixed" : ""};
   justify-content: space-between;
   align-items: center;
@@ -46,7 +48,7 @@ export const HeaderStyled = styled.header`
     border: none;
     color: ${ color.light };
     font-size: 18px;
-    margin: 0 7px;
+    margin: 0 2.5px;
     font-family: ${fonts.subtitle};
     transition: ease-in-out .3s;
     
@@ -161,3 +163,21 @@ export const Buttons = styled.div`
     }
   }
 ` 
+export const ButtonLang = styled.button`
+  position: absolute;
+  bottom: 25px;
+  right:30px;
+  border: none;
+  background: #fff;
+  padding: 5px 7px;
+  z-index: 5;
+  cursor: pointer;
+  &:hover {
+    background: #d6d6d6;
+  }
+  @media screen and (max-width: 500px){
+    bottom: 5px;
+    right: 5px;
+    padding: 2px 3px;
+  }
+`

@@ -3,8 +3,11 @@ import React, {Fragment, useState} from 'react';
 import {HeaderStyled} from '../../styledComponents/HomeStyled'
 // icons
 import menuPink from '../../icons/menuPink.png'
+import { useSelector } from 'react-redux';
 
 function Header() {
+  const languajes = useSelector(state => state.languajes.value);
+
   const [openCLoseMenu, setopenCLoseMenu] = useState(false);
   const menuFunction = () => {
     setopenCLoseMenu(!openCLoseMenu)
@@ -27,7 +30,8 @@ function Header() {
   window.addEventListener("scroll", isScrolled)
   return (
     <Fragment>
-      <HeaderStyled menu={openCLoseMenu} scrolled={headerScrolled}>
+      {languajes ?
+        <HeaderStyled menu={openCLoseMenu} scrolled={headerScrolled}>
         <a href="#home_section" >Freddy Velarde</a>
         <ul>
           <a href="#home_section">Home</a>
@@ -38,6 +42,19 @@ function Header() {
         </ul>
         <img src={menuPink} onClick={menuFunction} alt="" />
       </HeaderStyled> 
+        :
+      <HeaderStyled menu={openCLoseMenu} scrolled={headerScrolled}>
+      <a href="#home_section" >Freddy Velarde</a>
+      <ul>
+        <a href="#home_section">Inicio</a>
+        <a href="#about_section">Acerca</a>
+        <a href="#skills_section" >Habilidades</a>
+        <a href="#portfolio_section" >Portafolio</a>
+        <a href="#contact_section" >Contacto</a>
+      </ul>
+      <img src={menuPink} onClick={menuFunction} alt="" />
+    </HeaderStyled> 
+      }
     </Fragment>
   )
 }
