@@ -17,19 +17,19 @@ function Skills() {
         <TextAndImage>
           <TextSection>
             <WebDevelopment>
-              <h2> Web developement skills</h2>
-              <h3> &#10004; Html, css(flex-box, grid) responsive design, <span>Mobile first</span> </h3>
+              <h2> Web development skills</h2>
+              <h3> &#10004; Html, css(flex-box, grid) responsive design (<span>Mobile first</span>) </h3>
               <h3> &#10004;  Git and GitHub</h3>
-              <h3> &#10004;  Javascript: Variables, functions, loops, conditionals, <span>Async</span>, methods array, and <span>oop</span> </h3>
+              <h3> &#10004;  Javascript: Variables, functions, loops, conditionals, <span>async programming</span>, methods array, and <span>oop</span> </h3>
             </WebDevelopment>
 
             <ReactSection>
               <h2>React Js skills</h2>
               <h3>
-              &#10004; I work with the React tools: Hooks, funcional components, props, and JSX.
+              &#10004; Hooks, funcional components, props, and JSX.
               </h3>
               <h3>
-              &#10004;  I also work with <span>styled components</span> , and useContext.
+              &#10004;  I have been working with <span>styled components</span>, and useContext.
               </h3>
               <h3>
                 I can call Rest APIs, (async - await) with json objets.
@@ -42,7 +42,7 @@ function Skills() {
             <OtherSkilsSecition>
               <div>
                 <h2>Other Skills</h2>
-                 <h3>&#10004;  Terminal (windows) and English(B-1)</h3>
+                 <h3>&#10004;  Terminal (windows) and english(B-1)</h3>
               </div>
 
             </OtherSkilsSecition>

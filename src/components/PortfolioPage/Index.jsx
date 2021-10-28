@@ -6,9 +6,8 @@ import photosApp from '../../images/photos-app.jpg';
 import dogApp from '../../images/dog-app.jpg'
 import movieApp from '../../images/movie-app.jpg'
 import eCommApp from '../../images/eCommerce-app.jpg'
-
 // icons
-import github from '../../icons/githubSky.png'
+import github from '../../icons/githubSKy.png'
 import linkExternal from '../../icons/link-Pink.png'
 // styled components
 import { Backgroud, Cards, IconsStyled, PortfolioStyled } from '../../styledComponents/PortfolioPage';
