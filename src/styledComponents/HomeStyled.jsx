@@ -166,7 +166,7 @@ export const Buttons = styled.div`
 export const ButtonLang = styled.button`
   position: absolute;
   bottom: 25px;
-  right:30px;
+  left: 30px;
   border: none;
   background: #fff;
   padding: 5px 7px;

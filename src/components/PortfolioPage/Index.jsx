@@ -145,8 +145,8 @@ function PortfolioPage() {
             <Cards key={index}>
               <img src={item.img} alt="" width="250px" />
               <h3>{item.title}</h3>
-              <p> <span>Descripcion breve:</span> {item.text}</p>
-              <p> <span>Tecnologias usadas:</span> {item.tech}</p>
+              <p> <span>Descripción breve:</span> {item.text}</p>
+              <p> <span>Tecnologías usadas:</span> {item.tech}</p>
               <IconsStyled>
                 <a href={item.github} target="_blank" rel="noreferrer"  ><img src={github} alt="" /></a>
                 <a href={item.url} target="_blank" rel="noreferrer"   ><img src={linkExternal} alt="" /></a>
