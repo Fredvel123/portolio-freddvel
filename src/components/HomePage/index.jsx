@@ -1,18 +1,34 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 // import components
 import Header from './Header';
 // styled componets.
-import { Banner, ButtonLang, Buttons, Text, TextHome } from '../../styledComponents/HomeStyled';
+import { Banner, Buttons, Text, TextHome } from '../../styledComponents/HomeStyled';
+// redux
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { setLanguajes } from '../../redux-toolkit/slices/languaje';
-// redux
 
 
 function HomePage() {
   const languajes = useSelector(state => state.languajes.value);
   const dispatch = useDispatch();
 
+  const changeLanguage = () => {
+    setTimeout(() => {
+      dispatch(setLanguajes(!languajes))
+    }, 500);
+  }
+  // language in local storage
+  useEffect(() => {
+    const data = localStorage.getItem('languages');
+    if (data !== null) {
+      dispatch(setLanguajes(JSON.parse(data)))
+    }
+  }, [dispatch])
+
+  useEffect(() => {
+    localStorage.setItem('languages', JSON.stringify(languajes))
+  }, [languajes])
   return (
     <Fragment>
       <Banner id="home_section">
@@ -31,12 +47,12 @@ function HomePage() {
             }
             </Text>
           <Buttons>
-            <a href="#about_section" >{languajes ? "lets start" : "Empecemos"}</a>
+            <a href="#!"  onClick={changeLanguage}  >{languajes ? "Language" : "Idioma"}</a>
             <a href="#portfolio_section" >{languajes ? "Portfolio": "Proyectos"}</a>
           </Buttons>
-          <ButtonLang onClick={() => dispatch(setLanguajes(!languajes))} >
+          {/* <ButtonLang onClick={() => dispatch(setLanguajes(!languajes))} >
               {languajes ? "English" : "Español"}
-            </ButtonLang>
+            </ButtonLang> */}
         </TextHome>
       </Banner>
     </Fragment>
