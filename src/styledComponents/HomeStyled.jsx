@@ -75,10 +75,10 @@ export const HeaderStyled = styled.header`
       padding: .5vh 6px;
     }
     ul {
-
       transition: ease-in-out .5s;
       transform: ${({menu}) => menu ? "translateX(0)" : "translateX(-100%)" };
-      background: linear-gradient(#009687dc, #ca14c1dc);
+      /* background: linear-gradient(#009687dc, #ca14c1dc); */
+      background: #10151ae4;
       display: ${({menu})=> menu? "flex" : "flex"};
       flex-direction: ${({menu}) =>menu ? "column": "column" };
       position: ${({menu}) => menu ? "absolute": "absolute"};

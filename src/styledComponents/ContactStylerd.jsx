@@ -10,14 +10,16 @@ export const ContactSection = styled.div`
   background: ${color.dark};
   color: ${color.white};
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
-  flex-direction: column;
   & h2 {
     font-family: ${fonts.title};
     font-size: 22px;
     padding-top: 25px;
+  }
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
   }
   @media screen and (max-width: 540px){
     h2 {
@@ -41,4 +43,28 @@ export const Icons = styled.div`
         height: 45px;
     }
   } 
+`
+export const Info =  styled.div`
+  @media screen and (max-width: 850px) {
+    margin: 4vh;
+  }
+`
+
+
+export const IconsLeft = styled.div`
+  width: 300px;
+  display: flex;
+  margin-bottom: 1vh;
+  justify-content: space-between;
+  h3 {
+    font-family: ${fonts.subtitle};
+  }
+  
+  @media screen and (max-width: 750px) {
+    width: 225px;
+    h3 {
+      font-size: 15px;
+    }
+  }
+
 `

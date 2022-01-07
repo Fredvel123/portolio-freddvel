@@ -47,7 +47,7 @@ function HomePage() {
             }
             </Text>
           <Buttons>
-            <a href="#!"  onClick={changeLanguage}  >{languajes ? "Language" : "Idioma"}</a>
+            <a href="#!"  onClick={changeLanguage}  >{languajes ? "Spanish" : "Ingles"}</a>
             <a href="#portfolio_section" >{languajes ? "Portfolio": "Proyectos"}</a>
           </Buttons>
           {/* <ButtonLang onClick={() => dispatch(setLanguajes(!languajes))} >

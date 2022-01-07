@@ -44,7 +44,7 @@ function Skills() {
               <OtherSkilsSecition>
                 <div>
                   <h2>Other Skills</h2>
-                  <h3>&#10004;  Terminal (windows) and english(B-1)</h3>
+                  <h3>&#10004;  Terminal (Linux & Windows) and english(B-1)</h3>
                 </div>
 
               </OtherSkilsSecition>
@@ -75,7 +75,7 @@ function Skills() {
               <OtherSkilsSecition>
                 <div>
                   <h2>Otras Habilidades</h2>
-                  <h3>&#10004;  Terminal (windows) e inglés(B-1)</h3>
+                  <h3>&#10004;  Terminal (Linux y Windows) e inglés(B-1)</h3>
                 </div>
 
               </OtherSkilsSecition>
