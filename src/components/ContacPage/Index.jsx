@@ -6,6 +6,8 @@ import facebookIcon from '../../icons/facePink.png'
 import gitHubIcon from '../../icons/githubPink.png'
 import linkdinIcon from '../../icons/linkPink.png'
 import { useSelector } from 'react-redux';
+// icons font awesome
+
 
 
 function ContactPage() {
